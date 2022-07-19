@@ -286,8 +286,8 @@ export async function _boot(EntryPointNamespace, isError) {
 
   const appScripts = globalThis.__NEXT_DATA__.pages["/_app"];
 
-  //  Type 'typeof App' is not assignable to type 'ComponentClass<AppProps, any>'.
-  //  Construct signature return types 'App<any, any, any>' and 'Component<AppProps, any, any>' are incompatible.
+  // Type 'typeof App' is not assignable to type 'ComponentClass<AppProps, any>'.
+  // Construct signature return types 'App<any, any, any>' and 'Component<AppProps, any, any>' are incompatible.
   // @ts-expect-error
   CachedApp = NextApp;
   CachedComponent = PageComponent;

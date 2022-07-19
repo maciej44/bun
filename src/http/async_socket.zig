@@ -584,7 +584,7 @@ pub const SSL = struct {
         }
 
         // Although only the final SSL_read call may have failed, the failure needs to
-        // processed immediately, while the information still available in OpenSSL's
+        // be processed immediately, while the information is still available in OpenSSL's
         // error queue.
         var result: anyerror!u32 = total_bytes_read;
         count.* = total_bytes_read;
